@@ -1,0 +1,43 @@
+@import "variables";
+
+nav {
+	background: $theme;
+	font-weight: bold;
+
+	ul a {
+		color: #000;
+	}
+
+	.brand-logo {
+		img {
+		   	max-width: 32px;
+		    margin-top: 5px;
+		    margin-left: 2pc;
+		}
+	}
+	
+}
+
+.panel_info {
+	background: #f7f7f7;
+    padding: 18Px;
+    margin-top: 11pc;
+    color: #b5b5b5;
+    font-size: 19px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 480px) {
+	
+	.modal-open .modal {
+    	overflow-x: hidden;
+    	overflow-y: auto;
+    	width: 26pc;
+    	left: -12px;
+    	top: -14px;
+    	height: 80pc;
+    	z-index: 6000;
+	}
+}

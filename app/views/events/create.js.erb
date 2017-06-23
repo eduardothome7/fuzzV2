@@ -1,0 +1,7 @@
+<% if @event.errors.any? %>
+  $('#error_explanation').html("");	
+  $('#error_explanation').append('<div class="alert alert-danger"><%= j @event.errors.full_messages %></div>');
+<% else %>
+  $('#calendar').eventCalendar();
+  $('#eventFormModal').modal('toggle');
+<% end %>

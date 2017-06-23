@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  studio_id: 1
+  category_id: 1
+  name: MyString
+  description: MyString
+  price_hour: 9.99
+  price_weekend: 9.99
+  price_special_decimal: MyString
+  price_late: 9.99
+
+two:
+  studio_id: 1
+  category_id: 1
+  name: MyString
+  description: MyString
+  price_hour: 9.99
+  price_weekend: 9.99
+  price_special_decimal: MyString
+  price_late: 9.99

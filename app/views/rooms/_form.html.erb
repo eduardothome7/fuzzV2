@@ -1,0 +1,57 @@
+<%= form_for(room) do |f| %>
+  <% if room.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(room.errors.count, "error") %> prohibited this room from being saved:</h2>
+
+      <ul>
+      <% room.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :studio_id %>
+    <%= f.number_field :studio_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :category_id %>
+    <%= f.number_field :category_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price_hour %>
+    <%= f.text_field :price_hour %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price_weekend %>
+    <%= f.text_field :price_weekend %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price_special_decimal %>
+    <%= f.text_field :price_special_decimal %>
+  </div>
+
+  <div class="field">
+    <%= f.label :price_late %>
+    <%= f.text_field :price_late %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
